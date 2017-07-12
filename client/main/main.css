@@ -3,3 +3,8 @@
   font-family: monospace;
   font-weight: bold;
 }
+.heading{
+  font-size: 48 !important;
+  font-family: monospace;
+  font-weight: normal;
+}
