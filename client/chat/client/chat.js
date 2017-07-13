@@ -1,4 +1,4 @@
-Template.chat.helpers({
+Template.chat2.helpers({
   chatlines: function(){
     // return the last five chats
     // sorted by when they were created (most recent, first)
@@ -9,7 +9,7 @@ Template.chat.helpers({
 })
 
 
-Template.chat.events({
+Template.chat2.events({
   "click .js-chatsubmit": function(event){
     event.preventDefault();
     console.log("the button was clicked")
