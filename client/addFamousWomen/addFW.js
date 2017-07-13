@@ -1,9 +1,9 @@
-Template.Woman.helpers({
-  womanlist(){return Woman.find({},{limit:20,sort:{age:-1}})},
+Template.woman.helpers({
+  womanlist(){return People.find({},{limit:20,sort:{age:-1}})},
 })
 
 
-Template.women.events({
+Template.woman.events({
   "click #js-submit"(event,instance){
     console.log("hey it worked");
     //if (Meteor.userId()!="Nu9A4gN9AEh3iMixm") return;
@@ -12,13 +12,15 @@ Template.women.events({
     var birthplace= $("#js-birthplace").val();
     var occupation = $("#js-occupation").val();
     var accomplishments = $("#js-accomplishments").val();
-    var = image $("#js-image").val();
+    //var = image $("#js-image").val();
 
     //var x People.findOne({createdBy:Meteor.userId()})
     //People.remove(x._id);
     p = {name:name,
          age:age,
-         favcolor:favcolor,
+         birthplace:birthplace,
+         occupation:occupation,
+         accomplishments:accomplishments,
          createdAt: new Date(),
          createdBy:Meteor.userId()
        };
