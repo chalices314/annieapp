@@ -8,9 +8,14 @@
   image:<input type="url" id="js-image"><br>
   <input type="submit" id="js-submit" class="btn btn-info btn-sm">
 
+</template>
+
+<template name = "FWlist">
   <ul>
     {{#each woman in womanlist}}
-      {{> womaninfo w=woman}}
+      {{> FW w=woman}}
+      <hr>
     {{/each}}
   </ul>
+
 </template>
