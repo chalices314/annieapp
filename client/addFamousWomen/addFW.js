@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Template.addFW.helpers({
+=======
+Template.FWlist.helpers({
+>>>>>>> dbc52763d3f98a461e79a2ff9d3436740b902dce
   womanlist(){return Person.find({},{limit:20,sort:{name:-1}})},
 })
 
@@ -26,5 +30,9 @@ Template.addFW.events({
        };
     console.dir(w);
     Person.insert(w);
+<<<<<<< HEAD
+=======
+    Router.go('FWlist');
+>>>>>>> dbc52763d3f98a461e79a2ff9d3436740b902dce
   },
 })
