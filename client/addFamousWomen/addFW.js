@@ -1,4 +1,4 @@
-Template.addFW.helpers({
+Template.FWlist.helpers({
   womanlist(){return Person.find({},{limit:20,sort:{name:-1}})},
 })
 
@@ -26,5 +26,6 @@ Template.addFW.events({
        };
     console.dir(w);
     Person.insert(w);
+    Router.go('FWlist');
   },
 })
