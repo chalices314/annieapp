@@ -29,4 +29,11 @@ Template.addFW.events({
     Person.insert(w);
     Router.go('FWlist');
   },
+
+})
+
+Template.FW.events({
+  "click #js-delete"(event,instance){
+    Person.remove(this.w._id);
+  },
 })

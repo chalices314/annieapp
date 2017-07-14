@@ -11,7 +11,7 @@
     <h2>Last Five Chats:</h2>
     <ul>
       {{#each chat in chatlines}}
-      <li><b>{{userEmail chat.createdBy}}</b>
+      <li><b>{{chat.createdBy}}</b>
         / <i>{{chat.createdAt}}</i>
         <br>
         {{chat.text}}
@@ -29,7 +29,6 @@
   <li>
     {{c.text}}
     {{c.createdAt}}
-    {{author c.createdBy}}
     {{c.createdBy}}
   </li>
 </template>
