@@ -1,31 +1,21 @@
 <template name="layout">
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
+
       <div class="navbar-header">
         <a class="navbar-brand" href="/">FemStem</a>
       </div>
+
       <ul class="nav navbar-nav">
+
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
           Famous Women<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/addFW">Add a famous women</a></li>
-<<<<<<< HEAD
-            <li><a href="/FW">Famous Women</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
-          About<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/aboutus">About us</a></li>
-            <li><a href="/ourstory">Our story</a></li>
-            <li><a href="/oursupporters">Our Supporters</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Page 2</a></li>
-=======
             <li><a href="/FWlist">Famous Women</a></li>
           </ul>
         </li>
+
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
           About<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -33,52 +23,25 @@
             <li><a href="/ourstory">Our story</a></li>
             <li><a href="/oursupporters">Our Supporters</a></li>
           </ul>
-<<<<<<< HEAD
         </li>
-        <li>{{> loginButtons}}</li>
->>>>>>> dbc52763d3f98a461e79a2ff9d3436740b902dce
+
         <li><a href="friends.html"><button>Friends</button></a></li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-=======
-        {{> loginButtons}}</li>
->>>>>>> bbff85220fe1c9964c091411b524ee296089d2f9
+        <li>{{> loginButtons}}</li>
       </ul>
+
     </div>
   </nav>
 
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-  <!-- Single dropdown button -->
-  <div class="btn-group">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      About <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a href="/aboutus">About us</a></li>
-      <li><a href="/ourstory">Our story</a></li>
-      <li><a href="/oursupporters">Our Supporters</a></li>
-      <li><a href="/oursupporters">chat</a></li>
-    </ul>
-  </div>
-=======
->>>>>>> dbc52763d3f98a461e79a2ff9d3436740b902dce
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> dbc52763d3f98a461e79a2ff9d3436740b902dce
-=======
->>>>>>> bbff85220fe1c9964c091411b524ee296089d2f9
   <hr>
   {{#if currentUser}}
-  {{> yield}}
+    {{> yield}}
   {{else}}
-  You must log in to use this app
+    You must log in to use this app
   {{/if}}
   <hr>
   <footer>
