@@ -12,6 +12,7 @@ Template.addFW.events({
     var age = $("#js-age").val();
     var birthplace= $("#js-birthplace").val();
     var occupation = $("#js-occupation").val();
+    var url = $("#js-image").val();
     var accomplishments = $("#js-accomplishments").val();
     //var = image $("#js-image").val();
 
@@ -22,6 +23,7 @@ Template.addFW.events({
          birthplace:birthplace,
          occupation:occupation,
          accomplishments:accomplishments,
+         url:url,
          createdAt: new Date(),
          createdBy:Meteor.userId()
        };

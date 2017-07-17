@@ -1,4 +1,6 @@
 Meteor.startup(function(){
+  //if (Person.find().fetch()!==0) return;
+  //  Person.remove({});
     console.log("this is working!");
     var a = {
       name:"Cynthia Breazeal",
