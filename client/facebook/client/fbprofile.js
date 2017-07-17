@@ -1,5 +1,3 @@
-
-
 Template.fbprofile.helpers({
   user(){
     var theProfile = Profiles.findOne({owner:Meteor.userId()});
