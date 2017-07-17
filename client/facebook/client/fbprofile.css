@@ -3,3 +3,8 @@
   font-family: "Times New Roman", Times, serif ;
   color:black;
 }
+
+.w3-container{
+  height: 100px;
+  width: 50%;
+}
