@@ -13,35 +13,18 @@
   <a href="/fbusers" class="btn  btn-primary">See Your Follows</a>
   <a href="/fbtimeline" class="btn btn-primary">See Posts</a>
 
-  <title>W3.CSS</title>
   <meta name="viewport" content="width=100px, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <body>
 
   <div class="w3-container">
-    <h2>Photo Card</h2>
-
+    <h2>{{user.name}}'s profile</h2>
+  </div>
     <div class="w3-card-4" style="width:50%">
-      <img src="{{user.url}}" alt="Norway" style="width:100%">
+      <img src="{{user.url}}" alt="" style="width:100%">
       <div class="w3-container w3-center">
-        <p>The Troll's tongue in Hardanger, Norway</p>
+        <h3>{{user.bio}}</h3>
       </div>
     </div>
-  </div>
   </body>
-
-    <div class = "profile.1">
-    <h1>Profile</h1>
-    </div>
-  <hr>
-  <h1>Your Full Name: {{user.name}}</h1>
-  <br>
-  Your profile picture:
-    <image url ="{{user.url}}">
-    <br>
-  Your bio<br>
-    {{user.bio}}
-    <br>
-  </image>
-  <br>
 </template>
