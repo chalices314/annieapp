@@ -16,7 +16,11 @@ Template.register.events({
       profile:{fullname,username,country,languages},
     }
     console.log(JSON.stringify(user))
-    Accounts.createUser(user);
+    Accounts.createUser(user,function(error){
+      if (error) {
+        alert("registration failed "+JSON.stringify(error))
+      }
+    });
     Router.go('main');
 
   }

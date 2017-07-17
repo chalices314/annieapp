@@ -19,3 +19,9 @@ Template.chat.events({
   },
 
 })
+
+Template.chatline.helpers({
+  username(){
+    return "user";
+  }
+})

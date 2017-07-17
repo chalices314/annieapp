@@ -4,8 +4,13 @@ Template.login.events({
     console.log("clicked on login button");
     var username=instance.$("#js-uname").val();
     var password=instance.$("#js-psw").val();
-    console.log(username+" "+password);
-    Meteor.loginWithPassword(username,password);
+    console.log(email+" "+password);
+    Meteor.loginWithPassword(username,password,
+    function(error){
+      if(error){
+        alert("Login failed "+JSON.stringify(error));
+      }
+    });
     Router.go('main');
   }
 })

@@ -1,6 +1,6 @@
 
 Template.FWlist.helpers({
-  womanlist(){return Person.find({},{limit:20,sort:{name:-1}})},
+  womanlist(){return Person.find({},{limit:200,sort:{name:-1}})},
 })
 
 

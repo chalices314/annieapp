@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">FemStem</a>
+        <a class="navbar-brand" href="/">FemStem</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,8 +28,17 @@
 
         <ul class="nav navbar-nav navbar-right">
           <ul class="nav navbar-nav navbar-right">
+            {{#if currentUser}}
+            <li><button
+              class="btn btn-primary"
+              onclick="Meteor.logout()">
+                Logout
+              </button>
+            </li>
+              {{else}}
             <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
             <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            {{/if}}
           </ul>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
@@ -49,12 +58,18 @@
     {{> yield}}
   {{else}}
     You must log in to use this app
+    <h1>Login</h1>
+    {{> login}}
+    <hr>
+    <h1>Sign up</h1>
+    <br>
+    {{> register}}
   {{/if}}
     <hr>
     <div class = "footer">
     <footer>
       <center>&copy; FemStem Project 2017 All Rights Reserved</center>
-      <li>{{> loginButtons}}</li>
+
     </footer>
   </div>
 </template>
