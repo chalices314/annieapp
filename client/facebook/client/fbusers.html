@@ -14,6 +14,35 @@
 </template>
 
 <template name="fbperson">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <body>
+
+  <div class="w3-container">
+  <h2>Other users</h2>
+
+  <div class="w3-card-4" style="width:70%">
+    <header class="w3-container w3-light-grey">
+      <h3><a href="fbuser/{{u._id}}">{{u.name}}</a></h3>
+    </header>
+    <div class="w3-container">
+      <p>make a new friend</p>
+      <hr>
+      <img src="{{user.rul}}" alt="Image" class="w3-left w3-circle w3-margin-right" style="width:60px">
+      <p>{{user.bio}}</p><br>
+    </div>
+    {{#if isFriend}}
+      <button id="js-defriend" class="w3-button w3-block w3-dark-grey">Stop Following</button>
+    {{else}}
+      <button id="js-friend" class="w3-button w3-block w3-dark-grey">Follow</button>
+    {{/if}}
+  </div>
+  </div>
+
+  </body>
+
+
   <tr>
 
     <td><img src="{{u.url}}" height="100px"></td>
