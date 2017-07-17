@@ -1,18 +1,18 @@
 div.fb-post {
-  margin:20px;
-  border:thin solid blue;
-  padding:10px;
-  background-color:rgb(230,240,250);
+  margin:100px;
+
+  padding:50px;
+  background-color: lightblue;
 }
 
 textarea#fb-posttext{
-  background-color:rgb(250,240,230);
+  background-color: lightblue;
 }
 
 .text{
-  font-size: 24px !important;
+  font-size: 48px !important;
   font-family: "Georgia", Georgia, serif !important;
-  color: white;
+  color: black;
   text-shadow: 2px 2px 4px black, 0 0 1em lightblue, 0 0 0.2em lightblue;
 }
 
@@ -21,12 +21,21 @@ textarea#fb-posttext{
   margin:1em;
 }
 #bio {
-  font: italic 18pt 'New Times Roman';
+  font-size: 48;
+  font-family:"Georgia", Georgia, serif;
+  color: black;
+  text-shadow: 2px 2px 4px black, 0 0 1em lightblue, 0 0 0.2em lightblue;
   margin:1em;
   padding:1em;
 }
 
 #myfbprofile {
+  font-size: 48;
+  font-family:"Georgia", Georgia, serif;
+  color: black;
+  text-shadow: 2px 2px 4px black, 0 0 1em lightblue, 0 0 0.2em lightblue;
+  margin:1em;
+  padding:1em;
   border:thick solid black;
   padding:1em; margin:1em;
   background: #ddeeff
@@ -34,4 +43,5 @@ textarea#fb-posttext{
 
 .fbrmpost {
   float:right;
+  margin-right:100;
 }

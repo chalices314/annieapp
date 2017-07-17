@@ -34,22 +34,14 @@
     <h1>Profile</h1>
     </div>
   <hr>
-  Your Full Name:
-    <input type="text" id="js-name" value="{{user.name}}">
+  <h1>Your Full Name: {{user.name}}</h1>
   <br>
-  A link to your picture:
-    <input type="text" id="js-url" value="{{user.url}}">
+  Your profile picture:
+    <image url ="{{user.url}}">
     <br>
-  A short bio<br>
-    <textarea id="js-bio" cols="100%" rows="5">{{user.bio}}</textarea>
+  Your bio<br>
+    {{user.bio}}
     <br>
-
+  </image>
   <br>
-
-    <button id="js-submit" class="btn btn-info">Update Profile</button>
-    <div id="myfbprofile">
-    {{#let user=user}}
-    {{> fbuser user=user}}
-    {{/let}}
-    </div>
 </template>
