@@ -12,8 +12,18 @@
 <template name="fbinfo">
   <a href="/fbusers" class="btn  btn-primary">See Your Follows</a>
   <a href="/fbtimeline" class="btn btn-primary">See Posts</a>
+  <br>
+  <div class="card" style="width: 20rem">
+  <img class="card-img-top" style="width:300px" src="{{user.url}}" alt="Card image cap">
+  <div class="card-block alert alert-info" role="alert" style="width:300px">
+    <h4 class="card-title">{{user.name}}</h4>
+    <p class="card-text">{{user.bio}}.</p>
+    <a href="fbuser/{{u._id}}" class="btn btn-primary">See {{user.name}}'s page'</a>
+  </div>
+  </div>
 
-  <meta name="viewport" content="width=100px, initial-scale=1">
+
+  <!--<meta name="viewport" content="width=100px, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <body>
@@ -21,9 +31,9 @@
     <h2>{{user.name}}'s profile</h2>
   </div>
 
-    <div class="w3-card-4" style="width:50%">
+    <div class="w3-card-4" style="width:35%">
       <img src="{{user.url}}" alt="" style="width:100%">
-      <div class="w3-container w3-center">
+      <div class="w3-container w3-center" style="width:100%">
         <h3>{{user.bio}}</h3>
       </div>
     </div>
@@ -42,5 +52,5 @@
     <br>
   </image>
   <br>
-  </body>
+</body>-->
 </template>
