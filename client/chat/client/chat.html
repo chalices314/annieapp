@@ -11,12 +11,7 @@
     <h2>Last Five Chats:</h2>
     <ul>
       {{#each chat in chatlines}}
-      <li><b>{{chat.createdBy}}</b>
-        / <i>{{chat.createdAt}}</i>
-        <br>
-        {{chat.text}}
-        <hr>
-      </li>
+        {{> chatline chat=chat}}
       {{/each}}
     </ul>
     <hr>
@@ -26,9 +21,10 @@
 </template>
 
 <template name="chatline">
-  <li>
-    {{c.text}}
-    {{c.createdAt}}
-    {{c.createdBy}}
+  <li><b>{{username}}</b>
+    / <i>{{chat.createdAt}}</i>
+    <br>
+    {{chat.text}}
+    <hr>
   </li>
 </template>
