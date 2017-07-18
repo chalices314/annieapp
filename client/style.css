@@ -2,16 +2,12 @@ body{
   background-image: url('https://static1.squarespace.com/static/5694e18a4bf11844ad307ca2/56c9b9a545bf2194d54922e7/56c9b9a645bf2194d54922e8/1456060872555/Wallpaper+image.jpg?format=2500w');
 }
 
-
-
 .navbar {
   font-size: 17px;
   margin-bottom: 40px;
   height: 80px;
   align-items: stretch;
 }
-.navbar .navbar-
-
 
 .aboutus{
   font-size: 24px !important;
@@ -164,9 +160,6 @@ textarea#fb-posttext{
   font-family:cursive;
   font-weight: bold;
 }
-
-
-
 
 
 p {

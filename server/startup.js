@@ -1,20 +1,20 @@
 Meteor.startup(function(){
-  //if (Person.find().fetch()!==0) return;
-  //  Person.remove({});
+if (Person.find().count()!==0) return;
+Person.remove({});
     console.log("this is working!");
     var a = {
       name:"Cynthia Breazeal",
       birthdate:"1967",
       occupation:"Director of the Personal Robots Group at the MIT Media Laboratory",
-      accomplishments:"Pioneer of Social Robotics and Human Robot Interaction"
-
+      accomplishments:"Pioneer of Social Robotics and Human Robot Interaction",
+  
     };
     Person.insert(a);
     var b = {
       name:"Dr. Marla E. Perez-Davis",
       birthdate:"n/a",
       occupation:"NASA Deputy Director",
-      accomplishments:"recipient of NASA Outstanding Leadership Medal"
+      accomplishments:"recipient of NASA Outstanding Leadership Medal",
 
     };
     Person.insert(b);
@@ -22,7 +22,7 @@ Meteor.startup(function(){
       name:"Patricia Bath",
       birthdate:"1942",
       occupation:"Ophthalmologist and Inventor",
-      accomplishments:"first African American to complete opthalmology as well as first African American to have medical patent"
+      accomplishments:"first African American to complete opthalmology as well as first African American to have medical patent",
 
     };
     Person.insert(c);
