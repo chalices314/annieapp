@@ -13,6 +13,7 @@ Template.addFW.events({
     var birthplace= $("#js-birthplace").val();
     var occupation = $("#js-occupation").val();
     var url = $("#js-image").val();
+    if (!url) url="https://give.uwsp.edu/image/staff/default_member_image.png";
     var accomplishments = $("#js-accomplishments").val();
     //var = image $("#js-image").val();
 
