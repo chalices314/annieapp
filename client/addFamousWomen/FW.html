@@ -1,6 +1,6 @@
 <template name="FW">
 
-
+  <!--
   <img style="float:right;margin:20px" width="200" src = "{{w.url}}">
   <h1>{{w.name}}</h1>
   <ul>
@@ -9,6 +9,16 @@
     <li>occupation: {{w.occupation}}</li>
     <li>accomplishments: {{w.accomplishments}}</li>
     <li>  <button id="js-delete">Delete</button></li>
-
   </ul>
+-->
+
+  <div class="card" style="width: 20rem; float: left; padding: 300; margin-left: 100px; margin-top: 200px;">
+  <img class="card-img-top" style="width:300px;height:300px;object-fit:cover" src="{{w.url}}" alt="Card image cap">
+  <div class="card-block alert alert-info" style="width:300px;" role="alert">
+    <h3 class="card-title">{{w.name}}</h3>
+    <div class="card-text" style="height:200px;overflow:scroll">age: {{w.age}}<br>birthplace: {{w.birthplace}}<br> occupation: {{w.occupation}}<br>accomplishments: {{w.accomplishments}}</div>
+  </div>
+  </div>
+
+
 </template>
