@@ -1,0 +1,169 @@
+body{
+  background-image: url('https://s-media-cache-ak0.pinimg.com/736x/78/81/03/7881036575d15f28f497de2a2f61f7f5--red-watercolor-background-pink-watercolor-wallpaper.jpg');
+}
+
+
+
+
+
+.aboutus{
+  font-size: 24px !important;
+  font-family: "Georgia", Georgia, serif !important;
+  color: white;
+  text-shadow: 2px 2px 4px black, 0 0 1em lightblue, 0 0 0.2em lightblue;
+  float: left;
+  margin-left: 100px;
+  float: right;
+  margin-right: 500px;
+}
+
+.aboutush{
+  font-size: 48px !important;
+  font-family: "Georgia", Georgia, serif !important;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em lightblue, 0 0 0.2em lightblue;
+  float: left;
+  margin-left: 100px;
+}
+
+
+
+
+
+
+.layout {
+  font-size: 24;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  float: left;
+}
+
+
+
+
+
+.profile.1{
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif ;
+  color:black;
+  float: left;
+   margin-left:50
+}
+
+.w3-container{
+  height: 100px;
+  width: 50%;
+}
+
+
+
+
+.profilepage{
+  font-size: 24px !important;
+  font-family: "Georgia", Georgia, serif !important;
+  color: black;
+  text-shadow: 2px 2px 4px black, 0 0 1em lightblue, 0 0 0.2em white;
+  float: left;
+  margin-left: 100px;
+  float: right;
+  margin-right: 500px;
+}
+
+
+
+
+
+
+
+.main{
+  font-size: 76 !important;
+  font-family:cursive;
+  font-weight: bold;
+}
+.heading{
+  font-size: 48 !important;
+  font-family: cursive;
+  font-weight: normal;
+}
+
+
+
+
+div.fb-post {
+  margin:100px;
+
+  padding:50px;
+  background-color: lightblue;
+}
+
+textarea#fb-posttext{
+  background-color: lightblue;
+}
+
+.text{
+  font-size: 48px !important;
+  font-family: "Georgia", Georgia, serif !important;
+  color: black;
+  text-shadow: 2px 2px 4px black, 0 0 1em lightblue, 0 0 0.2em lightblue;
+}
+
+#bio-img{
+  padding:1em;
+  margin:1em;
+}
+#bio {
+  font-size: 48;
+  font-family:"Georgia", Georgia, serif;
+  color: black;
+  text-shadow: 2px 2px 4px black, 0 0 1em lightblue, 0 0 0.2em lightblue;
+  margin:1em;
+  padding:1em;
+}
+
+
+#myfbprofile {
+  font-size: 48;
+  font-family:"Georgia", Georgia, serif;
+  color: black;
+  text-shadow: 2px 2px 4px black, 0 0 1em lightblue, 0 0 0.2em lightblue;
+  margin:1em;
+  padding:1em;
+  border:thick solid black;
+  padding:1em; margin:1em;
+  background: #ddeeff
+}
+
+.fbrmpost {
+  float:right;
+  margin-right:100;
+}
+
+
+
+
+
+
+.footer {
+    display: block;
+}
+
+.main{
+  font-size: 76 !important;
+  font-family:cursive;
+  font-weight: bold;
+}
+
+
+
+
+
+p {
+  font-size: 48 !important;
+  font-family: cursive;
+  font-weight: normal;
+}
