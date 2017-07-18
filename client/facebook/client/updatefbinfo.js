@@ -25,6 +25,6 @@ Template.updatefbinfo.events({
     console.log("here is z")
     console.dir(z);
     Profiles.update(z._id,z);
-    Router.go("main");
+    Router.go("profilepage");
   }
 })
