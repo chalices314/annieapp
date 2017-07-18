@@ -1,0 +1,27 @@
+<template name="addNS">
+  <div class="card" style="width: 20rem; float: left; padding: 300; margin-left: 100px;">
+  <div class="card-block alert alert-info" style="width:600px; font-size: 18;" role="alert">
+    <br>
+    <h3 class="card-title">Add some News</h3>
+    <div class="card-text" style="height:400px;overflow:scroll">
+      Title:<input type="text" id="js-title"><br>
+      date:<input type="text" id="js-date"><br>
+      place:<input type="text" id="js-place"><br>
+      articleText:<textarea id="js-articleText" cols = "70%" rows = "5"></textarea><br>
+      image:<input type="url" id="js-image"><br>
+
+      <input type="submit" id="js-submit" class="btn btn-info btn-md">
+
+  </div>
+  </div>
+  </div>
+</template>
+
+<template name = "NSlist">
+  <ul>
+    {{#each news in newslist}}
+      {{> NS n=news}}
+    {{/each}}
+  </ul>
+
+</template>
