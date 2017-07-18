@@ -7,7 +7,7 @@ Template.addNS.events({
   "click #js-submit"(event,instance){
     console.log("hey it worked");
     //if (Meteor.userId()!="Nu9A4gN9AEh3iMixm") return;
-    var Title = $("#js-Title").val();
+    var title = $("#js-title").val();
     var date = $("#js-date").val();
     var place= $("#js-place").val();
     var articleText = $("#js-articleText").val();
@@ -17,7 +17,7 @@ Template.addNS.events({
 
     //var x People.findOne({createdBy:Meteor.userId()})
     //People.remove(x._id);
-    n = {Title:Title,
+    n = {title:title,
          date:date,
          place:place,
          articleText:articleText,
