@@ -38,9 +38,9 @@ body{
 }
 
 .footer {
-  position: fixed;
+  text-align: center;
   bottom: 0;
-  float: left;
+  float: center;
 }
 
 
