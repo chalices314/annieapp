@@ -2,19 +2,23 @@ body{
   background-image: url('https://static1.squarespace.com/static/5694e18a4bf11844ad307ca2/56c9b9a545bf2194d54922e7/56c9b9a645bf2194d54922e8/1456060872555/Wallpaper+image.jpg?format=2500w');
 }
 
+/*.chat{
+
+}
+
+*/
+
+
 .navbar {
   font-size: 17px;
   margin-bottom: 10px;
   align-items: stretch;
 }
-<<<<<<< HEAD
 
 .logo{
   float: inherit;
   margin-top: auto;
 }
-=======
->>>>>>> 926eaf3c3fb656c48707e6975862c6834fc6e588
 
 .aboutus{
   font-size: 24px !important;
@@ -167,6 +171,9 @@ textarea#fb-posttext{
   font-family:cursive;
   font-weight: bold;
 }
+
+
+
 
 
 p {
