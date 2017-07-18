@@ -6,12 +6,14 @@ body{
 
 .navbar {
   font-size: 17px;
-  margin-bottom: 40px;
-  height: 80px;
+  margin-bottom: 10px;
   align-items: stretch;
 }
-.navbar .navbar-
 
+.logo{
+  float: inherit;
+  margin-top: auto;
+}
 
 .aboutus{
   font-size: 24px !important;
