@@ -9,17 +9,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+<<<<<<< HEAD
 
 
       </div>
 
+=======
+        <a name="logo" class="navbar-brand" href="/">
+          <img alt="Brand" width="49px" src="images/FemStem Logo.jpg">
+        </a>
+      </div>
+>>>>>>> bc06896b68adc7f361b637c6475ab50f3eebe4ea
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="/">
-              <img src="images/FemStem Logo.jpg"  width="49 px" border="0"></a>
-          </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hall of Fame<span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -27,14 +31,19 @@
               <li><a href="/FWlist">Hall of Fem</a></li>
             </ul>
           </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/profilepage">Your Profile and Others </a></li>
+              <li><a href="/updatefbinfo">Update Your Profile</a></li>
+            </ul>
+          </li>
           <li><a href="/chat">Chat <span class="sr-only">(current)</span></a></li>
+          <li><a href="/updatefbinfo">Profile </a></li>
         </ul>
 
+
         <ul class="nav navbar-nav navbar-right">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -44,21 +53,27 @@
             </ul>
           </li>
           <li><a href="/contact">Contact Us</a></li>
+
+          {{#if currentUser}}
+          <li><a href="#" onclick="Meteor.logout()">Log Out</a></li>
+	         {{else}}
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
+          {{/if}}
         </ul>
       </div><!-- /.navbar-collapse -->
+
+
     </div><!-- /.container-fluid -->
   </nav>
-  <hr>
-  {{#if currentUser}}
     {{> yield}}
-  {{else}}
-    You must log in to use this app
-  {{/if}}
-    <hr>
-    <div class = "footer">
     <footer>
+<<<<<<< HEAD
       <center>&copy; Fem In Stem Project 2017 All Rights Reserved</center>
       <li>{{> loginButtons}}</li>
+=======
+      <p>&copy; FemInStem Project 2017 All Rights Reserved
+      </p>
+>>>>>>> bc06896b68adc7f361b637c6475ab50f3eebe4ea
     </footer>
-    </div>
 </template>

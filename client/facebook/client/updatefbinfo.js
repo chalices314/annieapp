@@ -13,6 +13,7 @@ Template.updatefbinfo.events({
     console.log("gender is "+gender);
     var field = instance.$("#field").val();
     var url = instance.$("#js-url").val();
+    if (!url) url="https://give.uwsp.edu/image/staff/default_member_image.png";
     var bio = instance.$("#js-bio").val();
     var z = Profiles.findOne({owner:Meteor.userId()});
     console.dir(['fields',name,gender,field,url,bio])
@@ -24,5 +25,6 @@ Template.updatefbinfo.events({
     console.log("here is z")
     console.dir(z);
     Profiles.update(z._id,z);
+    Router.go("main");
   }
 })
