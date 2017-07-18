@@ -22,6 +22,9 @@ Template.chat.events({
 
 Template.chatline.helpers({
   username(){
-    return "user";
+      console.dir(this);
+      var w = Profiles.findOne({owner:this.chat.createdBy});
+      console.dir(w)
+    return w.name;
   }
 })
