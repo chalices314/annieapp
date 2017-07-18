@@ -1,6 +1,6 @@
 Meteor.startup(function(){
-if (Person.find().count()!==0) return;
-//Person.remove({});
+//if (Person.find().count()!==0) return;
+Person.remove({});
     console.log("this is working!");
     var a = {
       name:"Cynthia Breazeal",
@@ -24,7 +24,7 @@ if (Person.find().count()!==0) return;
       birthdate:"1942",
       occupation:"Ophthalmologist and Inventor",
       accomplishments:"first African American to complete opthalmology as well as first African American to have medical patent",
-      url: "http://blackinventor.com/wp-content/uploads/2012/11/patriciabath07.jpg"
+      url: "http://teacher.scholastic.com/activities/bhistory/inventors/images/bath.jpg"
     };
     Person.insert(c);
    var d = {
