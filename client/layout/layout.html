@@ -48,13 +48,15 @@
           <li><a href="/contact">Contact Us</a></li>
 
           {{#if currentUser}}
-  <li><a href="#" onclick="Meteor.logout()">Log Out</a></li>
-	  {{else}}
- <li><a href="/login">Login</a></li>
- <li><a href="/register">Register</a></li>
+          <li><a href="#" onclick="Meteor.logout()">Log Out</a></li>
+	         {{else}}
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Register</a></li>
           {{/if}}
         </ul>
       </div><!-- /.navbar-collapse -->
+
+
     </div><!-- /.container-fluid -->
   </nav>
     {{> yield}}
