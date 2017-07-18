@@ -4,6 +4,12 @@ body{
 
 
 
+.navbar {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+
 .aboutus{
   font-size: 24px !important;
   font-family: "Georgia", Georgia, serif !important;
