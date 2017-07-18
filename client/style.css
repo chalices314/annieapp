@@ -2,11 +2,50 @@ body{
   background-image: url('https://static1.squarespace.com/static/5694e18a4bf11844ad307ca2/56c9b9a545bf2194d54922e7/56c9b9a645bf2194d54922e8/1456060872555/Wallpaper+image.jpg?format=2500w');
 }
 
-/*.chat{
-
+.chat{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.with-bottom-margin{
+  margin-bottom: 20px !important;
+}
+.with-top-margin{
+  margin-top:20px !important;
+}
+.with-right-margin{
+  margin-right: 20px !important;
+}
+.with-left-margin{
+  margin-left:20px !important;
 }
 
+/*.padded {
+    box-sizing: border-box;
+    padding: 20px;
+}
+.padded-horizontal, .with-horizontal-padding, .horizontally-padded{
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.padded-vertical, .with-vertical-padding, .vertically-padded{
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.with-right-padding{
+  padding-right: 20px !important;
+}
+.with-left-padding{
+  padding-left: 20px !important;
+}
 */
+}
+
+
 
 
 .navbar {
