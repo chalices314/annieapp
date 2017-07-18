@@ -2,9 +2,15 @@
   font-size: 24px;
   font-family: "Times New Roman", Times, serif ;
   color:black;
+  float: left;
+   margin-left:50
 }
 
 .w3-container{
   height: 100px;
   width: 50%;
+}
+
+a{
+  text-align: center;
 }

@@ -1,25 +1,19 @@
 <template name="main">
-  <div class= "background image">
-  <style>
-    body {background-image: url("realbackgroundpink.jpg");
-
-    #example1 {
-        border: 1px solid black;
-        background:url(img_flwr.gif);
-        background-repeat: no-repeat;
-        padding:15px;
-    }
-  </style>
-
- <h1 class = "main"><center>Welcome to the FemSTEM APP</center></h1>
- <h2 class = "heading"><center> We are a group of app design students doing a summer app design program at brandeis university.</center>
+  <!-- style>
+    body {background-image: url("https://cdn-enterprise.discourse.org/meteor/uploads/default/original/2X/8/8cd0d0fa4d9be94818b86e3c30710e16ed9a5fb2.png");}
+  </style -->
+ <h1 class = "main"><center>Welcome to the FeminSTEM APP</center></h1>
+ <h3><p class = "heading"><center> We are a group of app design students doing a summer app design program at Brandeis University.
+ Our goal is to help connect women who are either currently in STEM or are looking into getting a job in STEM. Our app offers
+ a global chat room for quick communication amoung users. Our news feed below is always up to date with the most recent events regaurdong
+ women in STEM. We hope that our efforts will create an impact in the field and thank you for using our site. </center>
    <br>
-  <center> We hope you enjoy our page! </center>
- </h2>
+ </p></h3>
 
 <!--We got this code from https://github.com/tjhickey724/meteordemos-->
+<h2>This is your profile</h2><br>
+{{>fbprofile}}<br>
 
-{{>fbprofile}}
 {{>fbtimeline}}
 {{>fbuser}}
 {{>fbusers}}
