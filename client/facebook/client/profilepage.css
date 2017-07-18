@@ -1,0 +1,10 @@
+.profilepage{
+  font-size: 24px !important;
+  font-family: "Georgia", Georgia, serif !important;
+  color: black;
+  text-shadow: 2px 2px 4px black, 0 0 1em lightblue, 0 0 0.2em white;
+  float: left;
+  margin-left: 100px;
+  float: right;
+  margin-right: 500px;
+}
