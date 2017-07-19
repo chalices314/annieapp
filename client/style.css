@@ -2,6 +2,7 @@ body{
   background-image: url('https://static1.squarespace.com/static/5694e18a4bf11844ad307ca2/56c9b9a545bf2194d54922e7/56c9b9a645bf2194d54922e8/1456060872555/Wallpaper+image.jpg?format=2500w');
 }
 
+<<<<<<< HEAD
 .chat{
   margin-left: 20px;
   margin-right: 20px;
@@ -28,6 +29,8 @@ body{
 
 }
 
+=======
+>>>>>>> c4509941ce31c2f1d35323f0d66ca066985ef8be
 /*.padded {
     box-sizing: border-box;
     padding: 20px;
@@ -50,9 +53,6 @@ body{
   padding-left: 20px !important;
 }
 */
-}
-
-
 
 
 .navbar {
