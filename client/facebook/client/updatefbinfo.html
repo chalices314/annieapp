@@ -3,28 +3,38 @@
   <a href="/fbtimeline" class="btn btn-primary">See Posts</a>
     <h1>Update your Profile</h1>
   <hr>
-  Your Full Name:
-    <input type="text" id="js-name" value="{{user.name}}">
-  <br>
-  Your Gender:
-    <input type="text" id="gender" value="{{user.gender}}">
-  <br>
-  Your Field:
-    <input type="text" id="field" value="{{user.field}}">
-  <br>
-  A link to your picture:
-    <input type="text" id="js-url" value="{{user.url}}">
-    <br>
-  A short bio<br>
-    <textarea id="js-bio" cols="100%" rows="5">{{user.bio}}</textarea>
-    <br>
 
-  <br>
+  <div class="col-sm-3">
+    <div class="card" style="width: 20rem; float: left; padding: 300; margin-left: 50px;">
+    <div class="card-block alert alert-info" style="width:800px;" role="alert">
+      <div class="card-text" style = "font-size: 40pt">
+        Your Full Name:
+          <input type="text" id="js-name" value="{{user.name}}">
+        <br>
+        Your Gender:
+          <input type="text" id="gender" value="{{user.gender}}">
+        <br>
+        Your Field:
+          <input type="text" id="field" value="{{user.field}}">
+        <br>
+        A link to your picture:
+          <input type="text" id="js-url" value="{{user.url}}">
+          <br>
+        A short bio<br>
+          <textarea id="js-bio" cols="40%" rows="5">{{user.bio}}</textarea>
+          <br>
 
-    <button id="js-submit" class="btn btn-info">Update Profile</button>
-    <div id="myfbprofile">
-    {{#let user=user}}
-    {{> fbuser user=user}}
-    {{/let}}
+          <button id="js-submit" class="btn btn-info">Update Profile</button>
+          <div id="myfbprofile">
+          {{#let user=user}}
+          {{> fbuser user=user}}
+          {{/let}}
+          </div>
+        </div>
     </div>
+    </div>
+  </div>
+
+
+
 </template>
