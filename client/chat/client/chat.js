@@ -3,7 +3,7 @@ Template.chat.helpers({
     // return the last five chats
     // sorted by when they were created (most recent, first)
     return Chats.find({},
-                      {limit:25,
+                      {limit:10,
                         sort: {createdAt: -1}})},
 
 })
