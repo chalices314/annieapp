@@ -1,0 +1,11 @@
+<template name="chatline">
+  <li><b>{{username}}</b>
+    / <i>{{chat.createdAt}}</i>
+    <br>
+    {{chat.text}}
+  {{#if isOwner}}
+<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+{{/if}}
+    <hr>
+  </li>
+</template>

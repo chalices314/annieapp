@@ -10,9 +10,10 @@
 </template>
 
 <template name="fbinfo">
-  <a href="/fbusers" class="btn  btn-primary">See Your Follows</a>
-  <a href="/fbtimeline" class="btn btn-primary">See Posts</a>
+  <!--<a href="/fbusers" class="btn  btn-primary">See Your Follows</a>
+  <a href="/fbtimeline" class="btn btn-primary">See Posts</a>-->
   <br>
+  <div class="card card-inverse" style="background-color: #333; border-color: #333;">
   <div class="card" style="width: 20rem">
   <img class="card-img-top" style="width:300px" src="{{user.url}}" alt="Card image cap">
   <div class="card-block alert alert-info" role="alert" style="width:300px">
@@ -21,6 +22,7 @@
     <a href="fbuser/{{u._id}}" class="btn btn-primary">See {{user.name}}'s page'</a>
   </div>
   </div>
+</div>
   <!--<meta name="viewport" content="width=100px, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
